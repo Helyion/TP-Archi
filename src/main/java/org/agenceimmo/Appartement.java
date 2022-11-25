@@ -1,25 +1,24 @@
-package enonce.agenceimmo;
+package org.agenceimmo;
 
 /**
  * @author ouziri
- *
  */
 
-public class Appartement {
-  
-	private int numero;
-	private double montantVente;	
-  	
-	public Appartement(int numero, double montantVente) {
-		this.numero = numero;
-		this.montantVente = montantVente;
-	}
+public class Appartement implements IBien{
 
-	public int getNumero() {
-		return numero;
-	}
-	
-	public double getMontant (){
-		return this.montantVente;
-	}
+    private final int numero;
+    private final double montantVente;
+
+    public Appartement(int numero, double montantVente) {
+        this.numero = numero;
+        this.montantVente = montantVente;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public double getMontant() {
+        return this.montantVente;
+    }
 }
